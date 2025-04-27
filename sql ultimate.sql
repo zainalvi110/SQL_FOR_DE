@@ -83,17 +83,19 @@ INSERT INTO departmnet VALUES(2, 'sales', 'azerbaijaan'),
 select distinct  employe.e_name,employe.e_dept ,departmnet.d_name,departmnet.d_location from employe
 inner join departmnet on employe.e_dept=departmnet.d_name
 
-
+-----------------------------------left join------------------
 select distinct employe.e_name,employe.e_dept ,departmnet.d_name,departmnet.d_location from employe
 left join departmnet on employe.e_dept=departmnet.d_name
-
+------------------------------------------right join-----------------------------------------
 select employe.e_name,employe.e_dept ,departmnet.d_name,departmnet.d_location from employe
 right join departmnet on employe.e_dept=departmnet.d_name
 order by e_dept 
-
+-----------------------------------full join-----------------------------------
 
 
 select distinct employe.e_name,employe.e_dept ,departmnet.d_name,departmnet.d_location from employe
 full join departmnet on employe.e_dept=departmnet.d_name
 
+
+--###--------------- STAY TUNED FOR MORE DEEEEEEEEEEEEPPPPPPPP...... SQL--------------------------------------------
 
